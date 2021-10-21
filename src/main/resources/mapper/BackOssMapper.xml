@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ytzl.demo.mapper.BackOssMapper">
+
+    <resultMap id="BaseResultMap" type="com.ytzl.demo.pojo.BackOss">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="fileUrl" column="file_url" jdbcType="VARCHAR"/>
+            <result property="ossName" column="oss_name" jdbcType="VARCHAR"/>
+            <result property="fileName" column="file_name" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,file_url,oss_name,
+        file_name,create_time
+    </sql>
+</mapper>
